@@ -54,7 +54,8 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "clothing_store",
+    # "clothing_store",
+    "authentication",
     "rest_framework",
     "corsheaders",
 ]
@@ -107,6 +108,8 @@ DATABASES = {
         "PORT": os.getenv("DB_PORT"),
     }
 }
+
+AUTH_USER_MODEL = 'authentication.User'
 
 
 # Password validation
